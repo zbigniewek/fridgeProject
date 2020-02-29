@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": "1", "name": "mleko", "quantity": "0" },
+    {"id": "2", "name": "masło", "quantity": "0"}
+  ]
+
+}
+
+
