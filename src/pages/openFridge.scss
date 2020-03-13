@@ -1,0 +1,54 @@
+.fridgeContainer {
+
+
+
+  .openFridge {
+    list-style: none;
+    padding-top: 10px;
+
+
+
+    li {
+      padding-bottom: 10px;
+      text-align: center;
+      color: blue;
+
+
+
+
+      button{
+        margin-left: 10px;
+        margin-top: 5px;
+        background-color: lightyellow;
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid black;
+        padding: 5px 25px;
+        border-radius: 5px;
+
+
+      }
+
+    }
+  }
+}
+
+
+.addProduct{
+  border-radius: 8px;
+  position: center;
+  padding: 10px 30px;
+  margin:10px;
+  background-color: aqua;
+  font-size: 20px;
+}
+.footer{
+  padding-top: 5px;
+  list-style: none;
+
+}
+input{
+  font-size: 20px;
+  height: 30px;
+  width: 300px;
+}

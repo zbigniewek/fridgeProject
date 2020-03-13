@@ -1,9 +1,49 @@
 {
   "products": [
-    { "id": "1", "name": "mleko", "quantity": "0" },
-    {"id": "2", "name": "masło", "quantity": "0"}
+    {
+      "id": "1",
+      "name": "mleko",
+      "quantity": 0
+    },
+    {
+      "id": "2",
+      "name": "masło",
+      "quantity": 0
+    },
+    {
+      "id": "3",
+      "name": "jogurt",
+      "quantity": 4
+    },
+    {
+      "id": "4",
+      "name": "ser żółty",
+      "quantity": 0
+    },
+    {
+      "id": "5",
+      "name": "biały ser",
+      "quantity": 3
+    },
+    {
+      "id": "6",
+      "name": "dżem",
+      "quantity": 6
+    },
+    {
+      "id": "7",
+      "name": "ogórek",
+      "quantity": "0"
+    },
+    {
+      "id": "8",
+      "name": "pomidor",
+      "quantity": 0
+    },
+    {
+      "id": "9",
+      "name": "sałata",
+      "quantity": 0
+    }
   ]
-
 }
-
-
