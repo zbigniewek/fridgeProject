@@ -1,50 +1,66 @@
+body{
+  font-family: 'Bellota Text', cursive;
+  font-size: 20px;
+
+}
+
 .fridgeContainer {
-
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
 
   .openFridge {
     list-style: none;
     padding-top: 10px;
 
-
-
     li {
+      margin-right: 25px;
       padding-bottom: 10px;
       text-align: center;
-      color: blue;
-
-
-
+      color: black;
 
       button{
-        margin-left: 10px;
-        margin-top: 5px;
-        background-color: lightyellow;
-        font-size: 20px;
+        color: white;
+        margin: 5px;
+        background-color: #051B80;
+        font-size: 16px;
+        font-family: "Bitstream Charter";
         font-weight: bold;
-        border: 1px solid black;
-        padding: 5px 25px;
-        border-radius: 5px;
-
-
+        border: 1px  #f99a3d;
+        padding:  5px 25px;
+        border-radius: 15px;
+        cursor: cell;
       }
-
     }
   }
 }
 
+.bottomFridge{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
+}
 .addProduct{
-  border-radius: 8px;
+  font-family: "Bitstream Charter";
+  color: black;
+  border-radius: 20px;
   position: center;
   padding: 10px 30px;
   margin:10px;
-  background-color: aqua;
+  background-color: #94FFDA;
+  border: #94FFDA;
   font-size: 20px;
+  cursor: cell;
 }
 .footer{
-  padding-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   list-style: none;
+  :hover{
+    color: #051B80;
+  }
 
 }
 input{

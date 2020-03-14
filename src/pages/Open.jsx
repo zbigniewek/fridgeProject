@@ -9,7 +9,6 @@ class Open extends Component{
         products: [],
         ref: ""
     }
-
     componentDidMount() {
 
         fetch('http://localhost:4000/products')
@@ -20,21 +19,17 @@ class Open extends Component{
                 this.setState({
                     products: data
                 })
-
             })
-
     }
-
     render() {
         const{products} =this.state;
-
 
     return (
         <div className={"fridgeContainer"}>
         <ul className={"openFridge"}>
             {products.map(props =>
                 <li {...props} key={props.id} >
-                    {props.name}{"   "}{props.quantity}
+                    {props.name}{" -  "}{props.quantity}
                     <div className={"buttons"}>
                     <button onClick={()=>{
                         fetch('http://localhost:4000/products/'+props.id)
@@ -42,7 +37,6 @@ class Open extends Component{
                                 return response.json();
                             })
                             .then((data)=>{
-
                                     data.quantity++;
                                     console.log(data);
                                     fetch('http://localhost:4000/products/' + data.id, {
@@ -53,22 +47,19 @@ class Open extends Component{
                                         body: JSON.stringify(
                                             data
                                         )
-
                                     })
                                         .then((response) => {
                                             this.componentDidMount()
                                             return response.json();
                                         })
-
                             })
-                    }}>Dodaj</button>
+                    }}>DODAJ</button>
                     <button onClick={()=>{
                         fetch('http://localhost:4000/products/'+props.id)
                             .then((response) => {
                                 return response.json();
                             })
                             .then((data)=>{
-
                                 if(data.quantity>0) {
                                     data.quantity--;
                                     console.log(data);
@@ -80,7 +71,6 @@ class Open extends Component{
                                         body: JSON.stringify(
                                             data
                                         )
-
                                     })
                                         .then((response) => {
                                             this.componentDidMount()
@@ -88,14 +78,12 @@ class Open extends Component{
                                         })
                                 }
                             })
-                    }}>Usuń</button>
+                    }}>USUŃ</button>
                     </div>
-
                 </li>
             )}
         </ul>
-
-            <form onSubmit={(event) => {
+            <form className={"bottomFridge"} onSubmit={(event) => {
                 event.preventDefault();
                 fetch('http://localhost:4000/products/', {
                     method: 'POST',
@@ -108,34 +96,29 @@ class Open extends Component{
                             "quantity": 0
                         }
                     )
-
                 })
                     .then((response) => {
                         this.componentDidMount()
                         return response.json();
                     })
-
             }}>
-
                 <div>
-                    <input type="text"
+
+                    <input type="text" placeholder={"Wpisz nazwę produktu"}
                            onChange={(input) => {
                                this.setState({"ref": input.target.value}) }
                            }
                     />
                 </div>
-
-                <button className={"addProduct"} type="submit">Nowy produkt</button>
+                <button className={"addProduct"} type="submit">NOWY PRODUKT </button>
                 <li className={"footer"}>
-                <NavLink exact to="/" >ZAMKNIJ LODÓWKĘ!</NavLink>
-                    </li>
+                    <NavLink style={{color: "black", textDecoration: "none"}} exact to="/" ><p># ZAMKNIJ LODÓWKĘ!</p></NavLink>
+                </li>
+
             </form>
-            </div>
-
-
+        </div>
     )
 }
-
 };
 
 export default Open;

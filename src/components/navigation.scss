@@ -1,9 +1,9 @@
 .navigation{
-  width: 500px;
+  width: 440px;
   height: 750px;
   border: 2px solid black;
   border-radius: 15%;
-  background-color: aqua;
+  background-color: #94FFDA;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -16,23 +16,31 @@
     font-size: 40px;
     color: white;
     font-weight: bold;
+    padding-bottom: 20px;
   }
   div{
+
+    margin-right: 40px;
     color: black;
-    width: 500px;
+    width: 480px;
 
 
     border:1px solid black;
   }
-  li{
-    margin-top: 120px;
+  .openButton{
+    margin-top: 100px;
     margin-left: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px 30px;
+    width:120px;
+    height:50px;
     background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover{
+      color: #051B80;
 
-
+    }
 
   }
 }

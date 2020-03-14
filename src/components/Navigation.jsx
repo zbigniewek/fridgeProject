@@ -5,12 +5,6 @@ import { NavLink } from 'react-router-dom';
 import "./navigation.scss"
 import "./fridge.scss"
 
-
-
-const activeStyle={
-    color: 'red',
-};
-
 const Navigation = () => {
     return (
         <div className={"fridge"}>
@@ -19,11 +13,9 @@ const Navigation = () => {
                  <h2>F R I D G E</h2>
                  <div></div>
 
-            <li>
-                <NavLink exact to="/open" activeStyle={activeStyle}>Open</NavLink>
-            </li>
-
-
+            <div className={"openButton"}>
+                <NavLink style={{color: "black", textDecoration: "none"}} exact to="/Fridge" ><p>OTWÓRZ</p></NavLink>
+            </div>
              </ul>
         </div>
     );

@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "mleko",
-      "quantity": 0
+      "quantity": 2
     },
     {
       "id": "2",
@@ -13,7 +13,7 @@
     {
       "id": "3",
       "name": "jogurt",
-      "quantity": 4
+      "quantity": 5
     },
     {
       "id": "4",
@@ -23,17 +23,17 @@
     {
       "id": "5",
       "name": "biały ser",
-      "quantity": 3
+      "quantity": 0
     },
     {
       "id": "6",
       "name": "dżem",
-      "quantity": 6
+      "quantity": 1
     },
     {
       "id": "7",
       "name": "ogórek",
-      "quantity": "0"
+      "quantity": 0
     },
     {
       "id": "8",
@@ -41,9 +41,9 @@
       "quantity": 0
     },
     {
-      "id": "9",
-      "name": "sałata",
-      "quantity": 0
+      "name": "",
+      "quantity": 0,
+      "id": "vHCX1tX"
     }
   ]
 }
